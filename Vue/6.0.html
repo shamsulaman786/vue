@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="root">
+		<h1>
+			{{ message }}
+		</h1>
+		<button @click="reversedMessage">reverse</button>
+	</div>
+
+	<script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+	<script type="text/javascript">
+		var app = new Vue({
+			el: '#root',
+
+			data:
+			{
+				message: 'hello world'
+			},
+
+			methods:
+			{
+				reversedMessage(){
+					this.message= this.message.split('').reverse().join('');
+				}
+			}
+		})
+	</script>
+</body>
+</html>

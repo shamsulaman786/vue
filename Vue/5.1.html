@@ -1,0 +1,30 @@
+<!-- Attribute and Class Binding -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	.color-red{
+	color: red;	
+}
+</style>
+</head>
+<body>
+	
+<div id="root">
+	<h1 :class="className">head</h1>
+</div>
+	<script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+
+	<script>
+		var app = new Vue({
+		el: '#root',
+			data:
+			{
+				className: 'color-red'	
+			}
+		});
+
+	</script>
+</body>
+</html>
